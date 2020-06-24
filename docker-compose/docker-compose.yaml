@@ -1,0 +1,47 @@
+version: "2"
+services:
+  thinkindb:
+    container_name: thinkin_db
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sf8BG_thinkin
+      MYSQL_USER: thinkin_user
+      MYSQL_PASSWORD: thinkinpass
+    networks:
+      - thinkinmerce
+  thinkinphpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: thinkin_phpmyadmin
+    ports:
+      - "8008:80"
+    links:
+      - thinkindb:mysql
+    environment:
+      - PMA_HOST=mysql
+    networks:
+      - thinkinmerce
+  thinkinwp:
+    depends_on:
+      - thinkindb
+    container_name: thinkin_wp
+    image: wordpress:latest
+    volumes:
+      - ../wordpress:/var/www/html
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    ports:
+      - "8080:80"
+    links:
+      - thinkindb:mysql
+    environment:
+      WORDPRESS_DB_NAME: sf8BG_thinkin
+      WORDPRESS_DB_HOST: thinkindb:3306
+      WORDPRESS_DB_USER: thinkin_user
+      WORDPRESS_DB_PASSWORD: thinkinpass
+      WORDPRESS_TABLE_PREFIX: wp_Q4KONI194J_
+    networks:
+      - thinkinmerce
+networks:
+  thinkinmerce:
