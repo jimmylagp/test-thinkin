@@ -62,11 +62,6 @@ add_action('after_setup_theme', 'theme_register_nav_menu', 0);
 /**
  * Incs
  */
-require get_template_directory().'/inc/filter-main-menu.php';
-require get_template_directory().'/inc/filter-error-menu.php';
-require get_template_directory().'/inc/filter-search-menu.php';
-require get_template_directory().'/inc/filter-footer-menu.php';
-require get_template_directory().'/inc/filter-mobile-menu.php';
 
 // Phone format
 function phoneFormat($number) {
