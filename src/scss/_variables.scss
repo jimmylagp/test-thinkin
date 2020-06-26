@@ -1,11 +1,8 @@
 // Breakpoints
 $mq-breakpoints: (
-    xxmobile: 480.5px,
-    xmobile:  640px,
-    mobile:  767.5px,
-    tablet: 992.5px,
-    middle: 1140.5px,
-    large: 1220px,
+    mobile:  360px,
+    tablet: 980px,
+    large: 1200px,
 );
 
 // Size for containers
@@ -17,3 +14,12 @@ $containerPadding: 30px;
 // Font size
 
 // Colors
+$white: #ffffff !default;
+$headings: #000000 !default;
+$body: #929292 !default;
+$primaryAccent: #fbaac2 !default;
+$secondaryAccent: #ffced4 !default;
+$buttonHover: #b7d4d2!default;
+$preTitle: #232323 !default;
+$subText: #0b0b0b !default;
+$linkHover: #f79420 !default;

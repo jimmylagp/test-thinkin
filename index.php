@@ -195,9 +195,11 @@
     </section>
     <!-- End testimonials -->
 
+    <!-- Offerbox -->
     <section class="offerbox">
         <div class="offerbox__rounded">
             <div class="offerbox__container container">
+                <img src="" alt="" class="offerbox__arrow">
                 <div class="offerbox__row row">
                     <div class="offerbox__column column">
                         <h4 class="offerbox__title">THIS OFFER IS ONLY FOR PASSIONATE BLOGGERS!</h4>
@@ -210,5 +212,22 @@
             </div>
         </div>
     </section>
+    <!-- End offerbox -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__row row">
+                <div class="footer__column column">
+                    <small class="footer__text">© Copyright bloggers-love-stickers.com - Show with love who you are</small>
+                </div>
+                <div class="footer__column column">
+                    <a href="" class="footer__link">Imprint</a>
+                    <a href="" class="footer__link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
 </body>
 </html>
