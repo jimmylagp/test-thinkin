@@ -1,0 +1,14 @@
+$layout: '.container';
+
+#{$layout} {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: $containerMaxWidth;
+    padding: 0 $containerPadding;
+    width: 100%;
+
+    @include mq($until: mobile) {
+        flex-direction: column;
+    }
+}

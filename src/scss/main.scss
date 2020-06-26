@@ -8,10 +8,13 @@
 @import './variables';
 
 // Base
-
+@import './base/global';
 //Mixins
 
 // Layouts
+@import './layouts/container';
+@import './layouts/row';
+@import './layouts/column';
 
 // Components
 

@@ -1,0 +1,13 @@
+$layout: '.row';
+
+#{$layout} {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    min-height: 1px;
+    width: 100%;
+
+    &--space-between {
+        justify-content: space-between;
+    }
+}

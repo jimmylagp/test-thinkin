@@ -1,0 +1,43 @@
+$layout: '.column';
+
+#{$layout} {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &--row {
+        flex-direction: row;
+    }
+
+    &--space-left {
+        padding-left: calc((100% - #{$containerMaxWidth})/2 + #{$containerPadding});
+
+        @include mq($until: large) {
+            padding-left: $containerPadding;
+        }
+    }
+
+    &--2 {
+        max-width: 50%;
+
+        @include mq($until: mobile) {
+            max-width: 100%;
+        }
+    }
+
+    &--3 {
+        max-width: calc(100%/3);
+
+        @include mq($until: mobile) {
+            max-width: 100%;
+        }
+    }
+
+    &--4 {
+        max-width: 25%;
+
+        @include mq($until: mobile) {
+            max-width: 100%;
+        }
+    }
+}
