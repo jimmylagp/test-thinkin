@@ -37,7 +37,7 @@
                                 </div>
                                 <div class="box__form-row">
                                     <div class="box__form-column">
-                                        <input type="submit" class="box__form-submit btn btn--pink">
+                                        <input type="submit" class="box__form-submit btn btn--pink" value="<?= __('GET NOW YOUR FREE STICKER PACK', 'thikin-smart'); ?>">
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
             </div>
             <div class="box__row row">
                 <div class="box__column column">
-                    <p class="box__call-us"><?= __('OR SIMPLY GIVE US A CALL AT', 'thikin-smart'); ?> <a href="tel:5559589699" class="box__link"><?= get_field('front_box_phone', $post->ID) ? get_field('front_box_phone', $post->ID) : __('555 958 9699', 'thikin-smart'); ?></a></p>
+                    <p class="box__call-us"><?= __('OR SIMPLY GIVE US A CALL AT', 'thikin-smart'); ?> <a href="tel:<?php the_field('front_box_phone', $post->ID) ?>" class="box__link"><?= get_field('front_box_phone', $post->ID) ? get_field('front_box_phone', $post->ID) : __('555 958 9699', 'thikin-smart'); ?></a></p>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@
                     <h2 class="testimonials__title"><?= get_field('front_testimonials_title', $post->ID) ? get_field('testimonials_title', $post->ID) : __('Was sagt die Community?', 'thikin-smart'); ?></h2>
                     <?php if(have_rows('front_testimonials_slider')): ?>
                     <ul class="testimonials__slider">
-                        <?php while (have_rows('front_testimonials__slider')): the_row(); ?>
+                        <?php while (have_rows('front_testimonials_slider')): the_row(); ?>
                         <li class="testimonials__slider-slide">
                             <p class="testimonials__description">
                                 <?php the_sub_field('testimonial_text'); ?>
