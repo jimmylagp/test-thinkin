@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Satisfy&display=swap" rel="stylesheet">
-    <?php wp_head(); ?>
-</head>
-<body>
-    
-    <!-- Header -->
-    <header class="header">
-        <div class="header__container container">
-            <div class="header__row row">
-                <div class="header__column column">
-                    <h1 class="header__logo">
-                        <img src="" alt="" class="header__logo-img">
-                    </h1>
-                </div>
-                <div class="header__column column">
-                    <nav class="header__nav">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-option">
-                                <a href="" class="header__nav-link">Enter now</a>
-                            </li>
-                            <li class="header__nav-option">
-                                <a href="" class="header__nav-link">Enter now</a>
-                            </li>
-                            <li class="header__nav-option">
-                                <a href="" class="header__nav-link">Enter now</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End header -->
+<?php get_header(); ?>
 
     <!-- Box -->
     <section class="box">
@@ -214,22 +177,4 @@
     </section>
     <!-- End offerbox -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__container container">
-            <div class="footer__row row">
-                <div class="footer__column column">
-                    <small class="footer__text">© Copyright bloggers-love-stickers.com - Show with love who you are</small>
-                </div>
-                <div class="footer__column column">
-                    <a href="" class="footer__link">Imprint</a>
-                    <a href="" class="footer__link">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <?php wp_footer(); ?>
-</body>
-</html>
+<?php get_footer(); ?>

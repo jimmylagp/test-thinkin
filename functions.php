@@ -47,14 +47,8 @@ add_action('wp_enqueue_scripts', 'theme_css');
  */
 function theme_register_nav_menu(){
     register_nav_menus(array(
-        'primary_menu' => __('Menú Principal', 'trialap'),
-        'mobile_menu' => __('Menú Móvil', 'trialap'),
-        'footer_menu_1'  => __('Menú de Pie de Página 1', 'trialap'),
-        'footer_menu_2'  => __('Menú de Pie de Página 2', 'trialap'),
-        'footer_menu_3'  => __('Menú de Pie de Página 3', 'trialap'),
-        'sitemap'  => __('Mapa del sitio', 'trialap'),
-        'search'  => __('Buscador', 'trialap'),
-        'error'  => __('Error 404', 'trialap'),
+        'primary_menu' => __('Primary menu', 'thinkin-smart'),
+        'footer_menu'  => __('Footer menu', 'thinkin-smart'),
     ));
 }
 add_action('after_setup_theme', 'theme_register_nav_menu', 0);
@@ -62,6 +56,8 @@ add_action('after_setup_theme', 'theme_register_nav_menu', 0);
 /**
  * Incs
  */
+require get_template_directory().'/inc/filter-main-menu.php';
+require get_template_directory().'/inc/filter-footer-menu.php';
 
 // Phone format
 function phoneFormat($number) {
