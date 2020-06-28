@@ -20,6 +20,13 @@ PHPMyAdmin --> localhost:8008
 
 ## Dependencies installation
 
+You need the next WordPress plugin:
+
+[Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro)
+[Safe SVG](https://wpsvg.com/)
+
+## Dependencies installation
+
 Please install all depencies via NPM.
 ```bash
 npm install
