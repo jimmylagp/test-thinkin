@@ -1,10 +1,12 @@
 $component: '.btn';
 
 #{$component} {
+    align-items: center;
     background-color: $white;
     border: 1px solid $white;
     border-radius: 5px;
     color: $button;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     font-size: 14px;
@@ -13,6 +15,7 @@ $component: '.btn';
     letter-spacing: 2px;
     outline: none;
     padding: 13px 36px;
+    text-align: center;
     vertical-align: middle;
     width: fit-content;
 

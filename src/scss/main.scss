@@ -9,6 +9,8 @@
 
 // Base
 @import './base/global';
+@import './base/wp-content';
+
 //Mixins
 
 // Layouts
@@ -31,3 +33,4 @@
 @import './pages/front-page/stickers';
 @import './pages/front-page/testimonials';
 @import './pages/front-page/offerbox';
+@import './pages/default/main';

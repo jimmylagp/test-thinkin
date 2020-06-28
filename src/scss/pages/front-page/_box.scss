@@ -44,6 +44,11 @@ $section: '.box';
         z-index: 9;
     }
 
+    &__picture {
+        height: 100%;
+        object-fit: cover;
+    }
+
     &__form-title {
         margin-bottom: 2rem;
     }

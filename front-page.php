@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
+
+<?php if (have_posts()): while (have_posts()): the_post(); ?>
     <!-- Box -->
-    <section class="box">
+    <section id="box" class="box">
         <div class="box__secondbg"></div>
         <div class="box__container container">
             <img src="<?= get_template_directory_uri().'/dist/images/Bloggers-love-sticker_blog_your_dreams.png'; ?>" height="854" width="868" alt="<?= __('Blog your dreams', 'thinkin-smart'); ?>" class="box__tag">
@@ -87,7 +89,7 @@
 
     <?php if (get_field('front_stickers', $post->ID)): ?>
     <!-- Stickers -->
-    <section class="stickers">
+    <section id="stickers" class="stickers">
         <div class="stickers__container container">
             <div class="stickers__row row">
                 <div class="stickers__column column">
@@ -108,7 +110,7 @@
     <?php endif; ?>
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
         <div class="testimonials__container container">
             <div class="testimonials__row row">
                 <div class="testimonials__column column">
@@ -157,12 +159,14 @@
                             <p class="offerbox__description text"><?= get_field('front_offer_description', $post->ID) ? get_field('front_offer_description', $post->ID) : __('Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, non.', 'thikin-smart'); ?></p>
                         </div>
                         <div class="offerbox__column offerbox__column--pink column">
-                            <a href="" class="offerbox__link btn"><?= get_field('front_offer_button_text', $post->ID) ? get_field('front_offer_button_text', $post->ID) : __('I WANT ONE OF 100 FREE STICKERS', 'thikin-smart'); ?></a>
+                            <a href="#box" class="offerbox__link btn"><?= get_field('front_offer_button_text', $post->ID) ? get_field('front_offer_button_text', $post->ID) : __('I WANT ONE OF 100 FREE STICKERS', 'thikin-smart'); ?></a>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
     <!-- End offerbox -->
+
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
