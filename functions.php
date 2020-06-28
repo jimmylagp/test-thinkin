@@ -59,6 +59,20 @@ add_action('after_setup_theme', 'theme_register_nav_menu', 0);
 require get_template_directory().'/inc/filter-main-menu.php';
 require get_template_directory().'/inc/filter-footer-menu.php';
 
+/**
+ * AJAX End point
+ */
+function packages_function() {
+	$packages = $_POST['packages'];
+	if (isset($packages) && $packages != "" && $packages != NULL) {
+		update_field('global_stickers', $packages, 'option');
+	}
+
+	return $packages;
+ }
+add_action( 'wp_ajax_nopriv_packages_function',  'packages_function' );
+add_action( 'wp_ajax_packages_function','packages_function' );
+
 // Phone format
 function phoneFormat($number) {
 	if(ctype_digit($number) && strlen($number) == 10) {

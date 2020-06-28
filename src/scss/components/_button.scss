@@ -16,15 +16,23 @@ $component: '.btn';
     outline: none;
     padding: 13px 36px;
     text-align: center;
+    transition: all 0.4s;
     vertical-align: middle;
     width: fit-content;
 
     &:hover {
         background-color: $buttonHover;
+        border: 1px solid $buttonHover;
+        color: $white;
     }
 
     &--pink {
         background-color: $primaryAccent;
+        border: 1px solid $primaryAccent;
         color: $white;
+
+        &:hover {
+            border: 1px solid $buttonHover;
+        }
     }
 }

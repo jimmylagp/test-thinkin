@@ -17,40 +17,40 @@
                         <h3 class="box__form-title heading--2">
                             <?= get_field('front_box_title', $post->ID) ? get_field('front_box_title', $post->ID) : __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, culpa?', 'thikin-smart'); ?>
                         </h3>
-                        <p class="box__form-description heading heading--4"><?= __('GET ONE OF', 'thikin-smart'); ?> <span class="box__form-counter">100</span> <strong><?= __('FREE STICKER', 'thinkin-smart'); ?></strong> <?= __('PACKAGES', 'thinkin-smart'); ?></p>
-                        <form action="" class="box__form-wrapper">
+                        <p class="box__form-description heading heading--4"><?= __('GET ONE OF', 'thikin-smart'); ?> <span class="box__form-counter"><?php the_field('global_stickers', 'option'); ?></span> <strong><?= __('FREE STICKER', 'thinkin-smart'); ?></strong> <?= __('PACKAGES', 'thinkin-smart'); ?></p>
+                        <form id="packages-form" action="" class="box__form-wrapper">
                             <div class="box__form-container">
                                 <div class="box__form-row box__form-row--space-between">
                                     <div class="box__form-column">
-                                        <input type="text" placeholder="Name" class="box__form-input input">
+                                        <input name="pname" type="text" placeholder="Name" class="box__form-input input">
                                     </div>
                                     <div class="box__form-column">
-                                        <input type="text" placeholder="Mail*" class="box__form-input input">
-                                    </div>
-                                </div>
-                                <div class="box__form-row box__form-row--space-between">
-                                    <div class="box__form-column">
-                                        <input type="text" placeholder="Street" class="box__form-input input">
-                                    </div>
-                                    <div class="box__form-column">
-                                        <input type="text" placeholder="Postal Code" class="box__form-input input">
+                                        <input name="pmail" type="email" placeholder="Mail*" class="box__form-input input">
                                     </div>
                                 </div>
                                 <div class="box__form-row box__form-row--space-between">
                                     <div class="box__form-column">
-                                        <input type="text" placeholder="City" class="box__form-input input">
+                                        <input name="pstreet" type="text" placeholder="Street" class="box__form-input input">
                                     </div>
                                     <div class="box__form-column">
-                                        <input type="text" placeholder="State" class="box__form-input input">
+                                        <input name="pzip" type="number" placeholder="Postal Code" class="box__form-input input">
+                                    </div>
+                                </div>
+                                <div class="box__form-row box__form-row--space-between">
+                                    <div class="box__form-column">
+                                        <input name="pcity" type="text" placeholder="City" class="box__form-input input">
+                                    </div>
+                                    <div class="box__form-column">
+                                        <input name="pstate" type="text" placeholder="State" class="box__form-input input">
                                     </div>
                                 </div>
                                 <div class="box__form-row">
                                     <div class="box__form-column box__form-column--full box__form-column--row">
                                         <label for="check" class="box__form-check-container check__container">
-                                            <input id="check" type="checkbox" class="box__form-check check__input">
+                                            <input id="check" name="pprivacy" type="checkbox" class="box__form-check check__input">
                                             <span class="box__form-checkmark check__mark"></span>
                                         </label>
-                                        <small class="box__form-policy">I have read and agree to the <a href="" class="box__form-link">privacy policy</a>.</small>
+                                        <small class="box__form-policy"><?= __('I have read and agree to the ', 'thikin-smart'); ?><a href="" class="box__form-link"><?= __('privacy policy', 'thikin-smart'); ?></a>.</small>
                                     </div>
                                 </div>
                                 <div class="box__form-row">
