@@ -9,11 +9,11 @@
             <img src="<?= get_template_directory_uri().'/dist/images/Bloggers-love-sticker_blog_your_dreams.png'; ?>" height="854" width="868" alt="<?= __('Blog your dreams', 'thinkin-smart'); ?>" class="box__tag">
             <div class="box__rounded">
                 <div class="box__row row">
-                    <div class="box__column box__column--left column">
+                    <div class="box__column box__column--left column column--2">
                         <?php $boxPicture = get_field('front_box_picture', $page->ID); ?>
                         <img src="<?= $boxPicture['url'] ? $boxPicture['url'] : get_template_directory_uri().'/dist/images/Bloggers-love-sticker_happy_blogger.jpg'; ?>" alt="<?= $boxPicture['alt'] ? $boxPicture['alt'] : __('Blog your dreams', 'thinkin-smart'); ?>" class="box__picture">
                     </div>
-                    <div class="box__column box__column--right column">
+                    <div class="box__column box__column--right column column--2">
                         <h3 class="box__form-title heading--2">
                             <?= get_field('front_box_title', $post->ID) ? get_field('front_box_title', $post->ID) : __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, culpa?', 'thikin-smart'); ?>
                         </h3>
@@ -151,8 +151,8 @@
     <!-- Offerbox -->
     <section class="offerbox">
             <div class="offerbox__container container">
+                <img src="<?= get_template_directory_uri().'/dist/images/offerbox-arrow.png'; ?>" alt="<?= __('Arrow', 'thikin-smart'); ?>" class="offerbox__arrow">
                 <div class="offerbox__rounded">
-                    <img src="<?= get_template_directory_uri().'/dist/images/offerbox-arrow.png'; ?>" alt="<?= __('Arrow', 'thikin-smart'); ?>" class="offerbox__arrow">
                     <div class="offerbox__row row">
                         <div class="offerbox__column column">
                             <h4 class="offerbox__title text"><?= get_field('front_offer_title', $post->ID) ? get_field('front_offer_title', $post->ID) : __('THIS OFFER IS ONLY FOR PASSIONATE BLOGGERS!', 'thikin-smart'); ?></h4>

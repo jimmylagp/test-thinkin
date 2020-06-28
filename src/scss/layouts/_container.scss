@@ -10,5 +10,6 @@ $layout: '.container';
 
     @include mq($until: mobile) {
         flex-direction: column;
+        padding: 0 #{$containerPadding - 15};
     }
 }

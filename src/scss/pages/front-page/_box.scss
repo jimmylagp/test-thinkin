@@ -33,6 +33,10 @@ $section: '.box';
         &--right {
             max-width: 60%;
             padding: 2.5rem 3rem;
+
+            @include mq($until: mobile) {
+                padding:  2rem;
+            }
         }
     }
 
@@ -42,11 +46,25 @@ $section: '.box';
         left: calc(40% - 180px);
         top: -3rem;
         z-index: 9;
+
+        @include mq($until: tablet) {
+            left: calc((50% - 170px) - 1.5rem);
+        }
+
+        @include mq($until: mobile) {
+            left: 1.5rem;
+            max-width: 115px;
+            top: -2rem;
+        }
     }
 
     &__picture {
         height: 100%;
         object-fit: cover;
+
+        @include mq($until: mobile) {
+            height: 375px;
+        }
     }
 
     &__form-title {
@@ -67,6 +85,10 @@ $section: '.box';
         display: flex;
         flex-direction: row;
 
+        @include mq($until: mobile) {
+            flex-direction: column;
+        }
+
         &--space-between {
             justify-content: space-between;
         }
@@ -77,6 +99,10 @@ $section: '.box';
         flex-direction: column;
         max-width: calc(50% - 0.5rem);
         width: 100%;
+
+        @include mq($until: mobile) {
+            max-width: 100%;
+        }
 
         &--full {
             max-width: 100%;
@@ -110,16 +136,29 @@ $section: '.box';
     &__form-submit {
         max-width: 100%;
         width: 100%;
+
+        @include mq($until: mobile) {
+            height: auto;
+            white-space: pre-wrap;
+        }
     }
 
     &__call-us {
         color: $body;
         text-align: right;
         margin-bottom: 1rem;
+
+        @include mq($until: mobile) {
+            text-align: center;
+        }
     }
 
     &__link-phone {
         color: $body;
         font-weight: 600;
+
+        @include mq($until: mobile) {
+            display: block;
+        }
     }
 }

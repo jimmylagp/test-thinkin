@@ -5,7 +5,15 @@ $component: '.text';
     font-size: 16px;
     line-height: 1.7em;
 
+    @include mq($until: mobile) {
+        font-size: 14px;
+    }
+
     &--sub {
         font-size: 19px;
+
+        @include mq($until: mobile) {
+            font-size: 17px;
+        }
     }
 }

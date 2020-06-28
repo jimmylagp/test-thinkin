@@ -7,6 +7,10 @@ $layout: '.row';
     min-height: 1px;
     width: 100%;
 
+    @include mq($until: mobile) {
+        flex-direction: column;
+    }
+
     &--space-between {
         justify-content: space-between;
     }

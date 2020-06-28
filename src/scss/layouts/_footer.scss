@@ -6,6 +6,11 @@ $layout: '.footer';
     &__text {
         color: $body;
         font-size: 12px;
+
+        @include mq($until: mobile) {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
     }
 
     &__nav {
@@ -22,6 +27,11 @@ $layout: '.footer';
         list-style: none;
         padding: 0;
         margin: 0;
+
+        @include mq($until: mobile) {
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__nav-option {

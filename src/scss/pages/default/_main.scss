@@ -3,6 +3,10 @@ $section: '.default';
 #{$section} {
     padding: 5rem 0 6rem 0;
 
+    @include mq($until: mobile) {
+        padding: 0 0 4rem 0;
+    }
+
     &__title {
         margin-bottom: 4rem;
     }

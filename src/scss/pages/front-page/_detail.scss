@@ -13,11 +13,19 @@ $section: '.detail';
         position: absolute;
         right: 32%;
         top: -2rem;
+
+        @include mq($until: mobile) {
+            display: none;
+        }
     }
 
     &__title {
         margin-bottom: 2rem;
         max-width: 40%;
+
+        @include mq($until: mobile) {
+            max-width: 100%;
+        }
     }
 
     &__text {

@@ -4,6 +4,10 @@ $section: '.stickers';
     background-color: $inputBg;
     padding-bottom: 5rem;
 
+    @include mq($until: mobile) {
+        padding-bottom: 3rem;
+    }
+
     &__column {
         align-items: flex-start;
     }
@@ -12,15 +16,28 @@ $section: '.stickers';
         align-items: center;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         height: 150px;
         justify-content: space-between;
         max-width: 100%;
         width: 100%;
+
+        @include mq($until: tablet) {
+            height: 100px;
+        }
+
+        @include mq($until: mobile) {
+            height: auto;
+        }
     }
 
     &__img {
         display: flex;
         max-width: calc((100% / 6) - 1.5rem);
         width: 100%;
+
+        @include mq($until: mobile) {
+            max-width: calc((100% / 2) - 1.5rem);
+        }
     }
 }

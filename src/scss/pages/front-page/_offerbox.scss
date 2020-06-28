@@ -3,6 +3,26 @@ $section: '.offerbox';
 #{$section} {
     margin-bottom: 8rem;
 
+    @include mq($until: mobile) {
+        margin-bottom: 7rem;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__arrow {
+        right: 2rem;
+        max-width: 60px;
+        position: absolute;
+        top: -10rem;
+        z-index: 9;
+
+        @include mq($until: mobile) {
+            display: none;
+        }
+    }
+
     &__rounded {
         border-radius: 10px;
         box-shadow: 0px 0px 15px rgba($headings, 0.2);
@@ -10,18 +30,12 @@ $section: '.offerbox';
         position: relative;
     }
 
-    &__arrow {
-        right: 0;
-        max-width: 60px;
-        position: absolute;
-        top: -10rem;
-    }
-
     &__column {
         padding: 2rem;
 
         &--pink {
             background-color: $primaryAccent;
+            justify-content: center;
         }
     }
 
@@ -29,6 +43,16 @@ $section: '.offerbox';
         color: $headings;
         font-weight: 400;
         margin-bottom: 0.5rem;
+
+        @include mq($until: mobile) {
+            text-align: center;
+        }
+    }
+
+    &__description {
+        @include mq($until: mobile) {
+            text-align: center;
+        }
     }
 
     &__link {
