@@ -1,0 +1,43 @@
+$layout: '.header';
+
+#{$layout} {
+    padding: 3rem 0;
+
+    &__logo {
+        max-width: 350px;
+    }
+
+    &__nav {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+    }
+
+    &__nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__nav-option {
+        border-left: 1px solid $body;
+        padding-left: 1.5rem;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__nav-link {
+        color: $body;
+        font-weight: 400;
+
+        &:hover {
+            color: $headings;
+        }
+    }
+}

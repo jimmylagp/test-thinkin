@@ -1,0 +1,120 @@
+$section: '.box';
+
+#{$section} {
+    margin-top: 1rem;
+    position: relative;
+
+    &__secondbg {
+        background-color: $inputBg;
+        bottom: 0;
+        height: 47%;
+        position: absolute;
+        width: 100%;
+    }
+
+    &__container {
+        position: relative;
+        z-index: 9;
+    }
+
+    &__rounded {
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 3px 0px 15px rgba($headings, 0.1);
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+    }
+
+    &__column {
+        &--left {
+            max-width: 40%;
+        }
+
+        &--right {
+            max-width: 60%;
+            padding: 2.5rem 3rem;
+        }
+    }
+
+    &__tag {
+        position: absolute;
+        max-width: 170px;
+        left: calc(40% - 180px);
+        top: -3rem;
+        z-index: 9;
+    }
+
+    &__form-title {
+        margin-bottom: 2rem;
+    }
+
+    &__form-description {
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    &__form-counter {
+        color: $primaryAccent;
+        font-weight: 600;
+    }
+
+    &__form-row {
+        display: flex;
+        flex-direction: row;
+
+        &--space-between {
+            justify-content: space-between;
+        }
+    }
+
+    &__form-column {
+        display: flex;
+        flex-direction: column;
+        max-width: calc(50% - 0.5rem);
+        width: 100%;
+
+        &--full {
+            max-width: 100%;
+        }
+
+        &--row {
+            flex-direction: row;
+        }
+    }
+
+    &__form-check-container {
+        display: inline-block;
+        margin-right: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__form-policy {
+        align-self: center;
+        color: $body;
+        font-size: 16px;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+    }
+
+    &__form-link {
+        color: $body;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+
+    &__form-submit {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &__call-us {
+        color: $body;
+        text-align: right;
+        margin-bottom: 1rem;
+    }
+
+    &__link-phone {
+        color: $body;
+        font-weight: 600;
+    }
+}

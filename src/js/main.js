@@ -28,7 +28,7 @@ $(document).ready(function () {
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
+        dots: false,
         responsive: []
     })
 

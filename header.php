@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#fbaac2">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -23,6 +23,7 @@
                     <nav class="header__nav">
                         <?php
                         wp_nav_menu([
+                            'container' => false,
                             'theme_location'=> 'primary_menu',
                             'menu_class'    => 'header__nav-menu',
                             'echo'            => true,

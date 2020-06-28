@@ -1,0 +1,42 @@
+$layout: '.footer';
+
+#{$layout} {
+    margin-bottom: 2rem;
+
+    &__text {
+        color: $body;
+        font-size: 12px;
+    }
+
+    &__nav {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+    }
+
+    &__nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__nav-option {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__nav-link {
+        color: $body;
+        font-size: 12px;
+        font-weight: 400;
+
+        &:hover {
+            color: $headings;
+        }
+    }
+}

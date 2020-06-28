@@ -62,7 +62,7 @@ require get_template_directory().'/inc/filter-footer-menu.php';
 // Phone format
 function phoneFormat($number) {
 	if(ctype_digit($number) && strlen($number) == 10) {
-  	    $number = '('. substr($number, 0, 2) .') '. substr($number, 2, 4) .' '. substr($number, 6, 4);
+  	    $number = substr($number, 0, 3) .' '. substr($number, 3, 3) .' '. substr($number, 6, 4);
 	} else {
 		if(ctype_digit($number) && strlen($number) == 7) {
 			$number = substr($number, 0, 2) .' '. substr($number, 2, 5);

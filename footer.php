@@ -10,6 +10,7 @@
                 <div class="footer__column column">
                     <?php
                     wp_nav_menu([
+                        'container' => false,
                         'theme_location'=> 'footer_menu',
                         'menu_class'    => 'footer__nav-menu',
                         'echo'            => true,

@@ -1,0 +1,39 @@
+$section: '.offerbox';
+
+#{$section} {
+    margin-bottom: 8rem;
+
+    &__rounded {
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba($headings, 0.2);
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__arrow {
+        right: 0;
+        max-width: 60px;
+        position: absolute;
+        top: -10rem;
+    }
+
+    &__column {
+        padding: 2rem;
+
+        &--pink {
+            background-color: $primaryAccent;
+        }
+    }
+
+    &__title {
+        color: $headings;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+
+    &__link {
+        margin: 0 auto;
+        max-width: 368px;
+        width: 100%;
+    }
+}

@@ -15,7 +15,19 @@
 @import './layouts/container';
 @import './layouts/row';
 @import './layouts/column';
+@import './layouts/header';
+@import './layouts/footer';
 
 // Components
+@import './components/heading';
+@import './components/input';
+@import './components/check';
+@import './components/button';
+@import './components/text';
 
 // Pages
+@import './pages/front-page/box';
+@import './pages/front-page/detail';
+@import './pages/front-page/stickers';
+@import './pages/front-page/testimonials';
+@import './pages/front-page/offerbox';

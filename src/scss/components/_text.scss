@@ -1,0 +1,11 @@
+$component: '.text';
+
+#{$component} {
+    color: $body;
+    font-size: 16px;
+    line-height: 1.7em;
+
+    &--sub {
+        font-size: 19px;
+    }
+}

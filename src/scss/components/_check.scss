@@ -1,0 +1,50 @@
+$component: '.check';
+
+#{$component} {
+    &__container {
+        appearance: none;
+        background-color: $white;
+        border: 1px solid $body;
+        border-radius: 3px;
+        cursor: pointer;
+        display: block;
+        height: 18px;
+        position: relative;
+        max-width: 18px;
+        width: 100%;
+        user-select: none;
+    }
+
+    &__input {
+        cursor: pointer;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        width: 0;
+
+        &:checked ~ #{$component}__mark:after {
+            display: block;
+        }
+    }
+
+    &__mark {
+        left: 0;
+        height: 18px;
+        position: absolute;
+        top: 0;
+        width: 18px;
+
+        &:after {
+            border: solid $body;
+            border-width: 0 2px 2px 0;
+            display: none;
+            content: "";
+            height: 10px;
+            left: 5px;
+            position: absolute;
+            top: 1px;
+            transform: rotate(45deg);
+            width: 4px;
+        }
+    }
+}
