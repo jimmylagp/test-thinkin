@@ -1,0 +1,495 @@
+[
+    {
+        "key": "group_5ef6a71241192",
+        "title": "Front page",
+        "fields": [
+            {
+                "key": "field_5ef6a82409418",
+                "label": "Box picture",
+                "name": "front_box_picture",
+                "type": "image",
+                "instructions": "Upload your picture here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "svg,png,jpg,jpeg,gif"
+            },
+            {
+                "key": "field_5ef6a86a363c4",
+                "label": "Box title",
+                "name": "front_box_title",
+                "type": "text",
+                "instructions": "Put the box title here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Title",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef6a8c46b3e5",
+                "label": "Box form",
+                "name": "front_box_contact_form",
+                "type": "text",
+                "instructions": "Put the contact form short code:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Form short code",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef6bbce6b3e6",
+                "label": "Box phone",
+                "name": "front_box_phone",
+                "type": "number",
+                "instructions": "Put the telephone number here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Phone",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5ef6c1b51491e",
+                "label": "Detail title",
+                "name": "front_detail_title",
+                "type": "text",
+                "instructions": "Put the detail title here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Title",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef6c1f41491f",
+                "label": "Detail text",
+                "name": "front_detail_text1",
+                "type": "textarea",
+                "instructions": "Put the detail text here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Text",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5ef6c23014920",
+                "label": "Detail text (Second)",
+                "name": "front_detail_text2",
+                "type": "textarea",
+                "instructions": "Put the detail text here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Text",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5ef6c40e5b583",
+                "label": "Stickers",
+                "name": "front_stickers",
+                "type": "gallery",
+                "instructions": "Upload your images:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": 1,
+                "max": 6,
+                "insert": "append",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "svg,png,jpg,jpeg,gif",
+                "return_format": "array",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_5ef6c9f3d3767",
+                "label": "Testimonials subtitle",
+                "name": "front_testimonials_subtitle",
+                "type": "text",
+                "instructions": "Put the testimonials subtitle here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Subtitle",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef6ca2d069fb",
+                "label": "Testimonials title",
+                "name": "front_testimonials_title",
+                "type": "text",
+                "instructions": "Put the testimonials title here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Title",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef6cb3a36979",
+                "label": "Testimonials slider",
+                "name": "front_testimonials_slider",
+                "type": "repeater",
+                "instructions": "Add slides here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 1,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add slide",
+                "sub_fields": [
+                    {
+                        "key": "field_5ef6cb843697a",
+                        "label": "Testimonial text",
+                        "name": "testimonial_text",
+                        "type": "textarea",
+                        "instructions": "Put the testimonial text here:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "br"
+                    },
+                    {
+                        "key": "field_5ef6cbbd3697b",
+                        "label": "Testimonial avatar",
+                        "name": "testimonial_avatar",
+                        "type": "image",
+                        "instructions": "Upload the testimonial avatar here:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "svg,png,jpg,jpeg,gif"
+                    },
+                    {
+                        "key": "field_5ef6cbf33697c",
+                        "label": "Testimonial name",
+                        "name": "testimonial_name",
+                        "type": "text",
+                        "instructions": "Put the testimonial name here:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Name",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5ef6cc083697d",
+                        "label": "Testimonial from",
+                        "name": "testimonial_from",
+                        "type": "text",
+                        "instructions": "Put the testimonial from here:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "From",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5ef6cc1c3697e",
+                        "label": "Testimonial job",
+                        "name": "testimonial_job",
+                        "type": "text",
+                        "instructions": "Put the testimonial job here:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Job",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5ef6cf382d3bf",
+                "label": "Offer title",
+                "name": "front_offer_title",
+                "type": "text",
+                "instructions": "Put the offer title here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Title",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef6cfca2d3c0",
+                "label": "Offer description",
+                "name": "front_offer_description",
+                "type": "text",
+                "instructions": "Put the offer description here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Description",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef6cfe6d4ec3",
+                "label": "Offer button text",
+                "name": "front_offer_button_text",
+                "type": "text",
+                "instructions": "Put the offer button text here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Button text",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "2"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5ef693cf1aa57",
+        "title": "Options page",
+        "fields": [
+            {
+                "key": "field_5ef694e2be2cd",
+                "label": "Logotype",
+                "name": "global_logo",
+                "type": "image",
+                "instructions": "Upload your logotype here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "svg, png, jpg, jpeg, gif"
+            },
+            {
+                "key": "field_5ef8037dd60e5",
+                "label": "Sticker packages",
+                "name": "global_stickers",
+                "type": "number",
+                "instructions": "Put the total of free sticker packages here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Packages",
+                "prepend": "",
+                "append": "",
+                "min": 0,
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5ef6a1dec768f",
+                "label": "Copyright",
+                "name": "global_copyright",
+                "type": "text",
+                "instructions": "Put your copyright text here:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Your custom copyright text",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

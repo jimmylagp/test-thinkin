@@ -19,7 +19,7 @@ var gulp = require('gulp'),
  */
 var brosersyncSource = {
     //server: { baseDir: "./" },
-    proxy: "localhost:8080"
+    proxy: "localhost:8080",
 }
 
 /**
@@ -137,7 +137,6 @@ function imgmin() {
  */
 function watch() {
     browserSync.init(brosersyncSource)
-
     gulp.watch(scssFiles, gulp.series([cssCompiler, concatCSS]))
     gulp.watch(jsFiles, javascript)
     gulp.watch(imgSRC, imgmin)

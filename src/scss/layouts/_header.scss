@@ -6,6 +6,11 @@ $layout: '.header';
     &__logo {
         max-width: 350px;
 
+        @include mq($until: tablet) {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+
         @include mq($until: mobile) {
             margin: 0 auto;
             max-width: 250px;
